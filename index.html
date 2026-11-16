@@ -32,6 +32,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em}
 p{margin:0 0 1em}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+section[id],footer[id]{scroll-margin-top:58px}
 .skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--green-deep);padding:10px 16px;z-index:50}
 .skip:focus{left:12px;top:12px}
 
@@ -244,6 +245,40 @@ details .timeline time{font-size:24px}
   .mini{grid-template-columns:1fr 1fr}.mini img:first-child{grid-column:1/-1}
   .clanfacts dd{font-size:24px}
 }
+
+/* Баба ізімен */
+.baba{background:var(--green);color:#efe9d8}
+.baba h2{color:var(--gold)}
+.baba-top{display:grid;grid-template-columns:.72fr 1.28fr;gap:64px;align-items:start}
+.baba figure{margin:0}
+.baba figure img{width:100%;border-radius:6px}
+.baba .timeline{margin-top:40px}
+.baba .timeline::before{background:var(--gold);opacity:.55}
+.baba .timeline li::before{background:var(--green);border-color:var(--gold)}
+.baba .timeline li:last-child::before{background:var(--gold)}
+.baba .timeline time{color:var(--gold-soft)}
+.baba .timeline span{max-width:34em}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:72px;border-top:1px solid rgba(201,164,76,.4)}
+.trio>div{padding:30px 30px 0 0}
+.trio>div+div{padding-left:30px;border-left:1px solid rgba(201,164,76,.4)}
+.trio h3{font-size:28px;color:var(--gold-soft);margin-bottom:14px}
+.trio p,.trio li{font-size:16.5px}
+.trio ul{margin:0;padding-left:1.1em}
+.trio li{margin-bottom:8px}
+.trio dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:16.5px}
+.trio dt{font-family:var(--display);font-size:22px;color:var(--gold-soft);line-height:1.2}
+.trio dd{margin:0}
+.sources{margin-top:56px;font-size:14.5px;color:#c3cdc5;max-width:60em}
+.sources ol{margin:8px 0 0;padding-left:1.3em}
+.sources li{margin-bottom:4px}
+.sources a{color:var(--gold-soft)}
+@media (max-width:900px){
+  .baba-top{grid-template-columns:1fr;gap:36px}
+  .baba figure{max-width:300px}
+  .trio{grid-template-columns:1fr}
+  .trio>div,.trio>div+div{padding:26px 0 0;border-left:0}
+  .trio>div+div{border-top:1px solid rgba(201,164,76,.4);margin-top:26px}
+}
 </style>
 </head>
 <body>
@@ -254,6 +289,7 @@ details .timeline time{font-size:24px}
     <a class="brand" href="#top"><img src="img/logo.png" alt="" width="36" height="36">Сарыбас</a>
     <ul>
       <li><a href="#ru">Ру туралы</a></li>
+      <li><a href="#baba">Тарих</a></li>
       <li><a href="#maqsat">Мақсат</a></li>
       <li><a href="#mura">Мұра</a></li>
       <li><a href="#tulga">Тұлғалар</a></li>
@@ -297,6 +333,63 @@ details .timeline time{font-size:24px}
         <li>Байтоқа</li>
         <li>Тұтқыш</li>
         <li class="open">Өзге тармақтар шежіре жиналған сайын толықтырылады</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec baba" id="baba">
+  <div class="wrap">
+    <div class="baba-top">
+      <figure>
+        <img src="img/baibarak-poster.jpg" alt="Дулыға киген Байбарақ батырдың салынған бейнесі, астында «Байбарақ Құдайқұлұлы» жазуы">
+      </figure>
+      <div>
+        <hr class="rule">
+        <h2>Баба ізімен</h2>
+        <p class="intro">Алашаның ұраны – Байбарақ. Батыр туралы жазба деректер аз, бірақ бар: олар оның есімін Бәйсеу бимен, Әбілқайыр ханмен және XVIII ғасырдағы Кіші жүздің саяси ортасымен байланыстырады.</p>
+        <ol class="timeline" aria-label="Байбарақ батыр аталатын жылдар">
+          <li><time>1736</time><span>Ағылшын суретшісі Джон Кэстль Әбілқайыр ханның ордасында «Bey Saubey» және «Buburack Batur» деген екі адаммен кездескенін жазады. Зерттеушілер оларды Бәйсеу би мен Байбарақ батыр деп таниды. Жазбаға қарағанда, батыр бес жыл бойы қалмақтар арасында елші болған.</span></li>
+          <li><time>1749</time><span>Алаша батырлары Орынбордағы ұлықтау рәсіміне қатысқаны айтылады. Он сегіз старшынның қысқа тізімінде Байбарақтың аты жоқ, сондықтан бұл хабар толық тізіммен нақтылауды күтеді.</span></li>
+          <li><time>1755</time><span>Жыл соңында Кіші жүзде өткен құрылтайдың негізгі қатысушыларының бірі ретінде аталады.</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>Туыстық ортасы</h3>
+        <ul>
+          <li>Бәйсеу би Ботпанайұлы Алашаны бірнеше онжылдық басқарған. Байбарақ оның немере інісі.</li>
+          <li>Қара батыр Жомартұлы деректе Байбарақтың жақын туысы, інісінің не ағасының баласы ретінде сипатталады.</li>
+          <li>Қара батырдың ұлы Сыпыра би 1793 жылы тархан атағын алған.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Әлі анықталмағаны</h3>
+        <ul>
+          <li>Батырдың туған және қайтыс болған жылдары.</li>
+          <li>Елшіліктің кімнің атынан, қандай келіссөзбен өткені.</li>
+          <li>Нақты қай шайқастарға қатысқаны.</li>
+          <li>Байбарақ, Жомарт, Қара және Сыпыра арасындағы толық ата тізбегі.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Алаша руы сандарда</h3>
+        <dl>
+          <dt>1803</dt><dd>Жайық маңындағы батыс топта 5600, оңтүстік топта 1200 отбасы.</dd>
+          <dt>1825</dt><dd>Бөкей хандығында 1000 отбасы.</dd>
+          <dt>1834</dt><dd>Сол хандықтағы ведомоста 1700 отбасы.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="sources">
+      Деректер «Баба ізімен» атты тарихи талдаудан қысқартып алынды. Онда сүйенген негізгі еңбектер:
+      <ol>
+        <li>Меңілбаев Ғ.А. Баймұрат Байбөріұлы батыр және 18 ғасырдағы қазақ қоғамы. Абай атындағы ҚазҰПУ Хабаршысы, 2018, №1-2. <a href="https://rmebrk.kz/journals/4850/7029.pdf">Электрондық нұсқасы</a></li>
+        <li>Кэстль Дж. Дневник путешествия в году 1736-м из Оренбурга к Абулхаиру, хану Киргиз-Кайсацкой Орды. Алматы, 1998.</li>
+        <li>Ахметов К.Ғ. Кіші жүз Алаша руының шежіресі. Алматы, 2016.</li>
       </ol>
     </div>
   </div>
@@ -359,7 +452,8 @@ details .timeline time{font-size:24px}
         <div>
           <h3>Байбарақ Құдайқұлұлы</h3>
           <p class="role">Батыр</p>
-          <p>Есімі Алаша руының ұранына айналған батыр. Алаша Сарыбас қоры оның атындағы төс белгіні тағайындаған.</p>
+          <p>Есімі Алаша руының ұранына айналған батыр, XVIII ғасырда қалмақтар арасында елші болған. Қордың төс белгісі оның атымен аталады.</p>
+          <p><a href="#baba">Батыр туралы деректерді оқу</a></p>
         </div>
       </article>
       <article class="pcard">
