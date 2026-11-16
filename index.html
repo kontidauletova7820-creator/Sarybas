@@ -301,6 +301,15 @@ details .timeline time{font-size:24px}
 .today figcaption b{display:block;font-family:var(--display);font-weight:500;font-size:26px;color:var(--green);line-height:1.2}
 .today figcaption span{display:block;margin-top:4px;font-size:17px}
 @media (max-width:900px){.today .wrap{grid-template-columns:1fr;gap:40px}.today figure{max-width:440px}}
+
+/* Байтоқа ұлдары */
+.sons{width:min(100%,400px);margin:0 auto;position:relative;padding-top:26px}
+.sons::before{content:"";position:absolute;left:50%;top:0;width:22px;height:26px;margin-left:-11px;background:var(--gold)}
+.sons>p{margin:0;text-align:center;background:var(--gold);color:var(--green-deep);font-weight:600;font-size:16px;padding:9px 12px;border-radius:999px}
+.sons ul{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sons li{background:var(--green);color:var(--gold-soft);font-family:var(--display);font-size:21px;letter-spacing:.03em;text-align:center;padding:9px 8px;border-radius:999px}
+.sons li:last-child{grid-column:1/-1;justify-self:center;width:calc(50% - 5px)}
+.sons .open-note{background:transparent;border:1.5px dashed var(--clay);color:var(--clay);font-weight:400;font-size:15px;margin-top:14px;padding:12px 16px;border-radius:14px}
 </style>
 </head>
 <body>
@@ -343,7 +352,7 @@ details .timeline time{font-size:24px}
     <div>
       <hr class="rule">
       <h2>Сарыбас атасы</h2>
-      <p class="intro">Сарыбас – Кіші жүздің Байұлы бірлестігіне кіретін Алаша руының бір атасы. Бұл бет сол атадан тараған ұрпақтың шежіресін, тарихын және бүгінгі тынысын бір жерге жинайды.</p>
+      <p class="intro">Сарыбас – Кіші жүздің Байұлы бірлестігіне кіретін Алаша руының бір атасы. Оның ұлы Байтоқадан он бір ұл тарайды. Бұл бет сол әулеттің шежіресін, тарихын және бүгінгі тынысын бір жерге жинайды.</p>
       <dl class="clanfacts">
         <dt>Жүз</dt><dd>Кіші жүз</dd>
         <dt>Бірлестік</dt><dd>Байұлы</dd>
@@ -355,9 +364,24 @@ details .timeline time{font-size:24px}
       <ol class="chain" aria-label="Сарыбастан тараған тармақ">
         <li class="root"><span><small>Алаша руы</small>Сарыбас</span></li>
         <li>Байтоқа</li>
-        <li>Тұтқыш</li>
-        <li class="open">Өзге тармақтар шежіре жиналған сайын толықтырылады</li>
       </ol>
+      <div class="sons">
+        <p>Байтоқаның он бір ұлы</p>
+        <ul>
+          <li>Қоблан</li>
+          <li>Тұтқыш</li>
+          <li>Байназар</li>
+          <li>Қожаназар</li>
+          <li>Қойлыбай</li>
+          <li>Майлыбай</li>
+          <li>Әжібай</li>
+          <li>Таңатар</li>
+          <li>Шыңғырлау</li>
+          <li>Бөрті</li>
+          <li>Аманғали</li>
+        </ul>
+        <p class="open-note">Сарыбастың өзге тармақтары шежіре жиналған сайын толықтырылады.</p>
+      </div>
     </div>
   </div>
 </section>
