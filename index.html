@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Сарыбас – кітапқа қосымша мәлімет</title>
-<meta name="description" content="«Сарыбас» кітабына қосымша мәлімет: Алаша – Сарыбас ұрпақтарының шежіресі, тарихи мұрасы және Батырашов Талаптың өмір жолы.">
+<title>Сарыбас – Алаша руының Сарыбас атасы</title>
+<meta name="description" content="Алаша руының Сарыбас атасынан тараған әулеттің шежіресі, тарихи мұрасы, тұлғалары мен қор марапаттары.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -123,7 +123,7 @@ blockquote footer{font-family:var(--text);font-size:15px;color:#c5cfc7;margin-to
 
 /* Шежіре тізбегі */
 .lineage{background:var(--stone-2)}
-.lineage .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.lineage .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
 .chain{list-style:none;margin:0 auto;padding:0;width:min(100%,400px)}
 .chain li{position:relative;background:var(--green);color:var(--gold-soft);text-align:center;font-family:var(--display);font-size:28px;letter-spacing:.04em;padding:13px 16px;border-radius:999px;margin-top:22px}
 .chain li::before,.chain li::after{content:"";position:absolute;top:-22px;width:22px;height:22px;background:var(--gold);border-left:5px solid var(--stone-2);border-right:5px solid var(--stone-2);box-sizing:content-box}
@@ -204,21 +204,60 @@ blockquote footer{font-family:var(--text);font-size:15px;color:#c5cfc7;margin-to
   .crest img{width:96px;height:96px}
 }
 @media (max-width:520px){.spreads.two{grid-template-columns:1fr}.brand{display:none}}
+
+/* Ру туралы */
+.clanfacts{margin:40px 0 0;padding:0;display:grid;grid-template-columns:auto 1fr;gap:0 28px;max-width:30em}
+.clanfacts dt,.clanfacts dd{padding:14px 0;border-top:1px solid rgba(23,32,28,.22);margin:0}
+.clanfacts dt{color:var(--clay);font-size:16px;padding-top:19px}
+.clanfacts dd{font-family:var(--display);font-size:28px;line-height:1.2;color:var(--green)}
+.chain li.open{background:transparent;border:1.5px dashed var(--clay);color:var(--clay);font-family:var(--text);font-size:16px;letter-spacing:0;padding:16px}
+
+/* Тұлғалар */
+.people{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:60px}
+.pcard{display:grid;grid-template-columns:170px 1fr;gap:26px;align-items:start;padding:26px;background:#f8f4e9;border-radius:8px;border:1px solid rgba(23,32,28,.14)}
+.pcard img{width:170px;height:190px;object-fit:cover;border-radius:6px}
+.pcard h3{font-size:32px;color:var(--green);margin-bottom:6px}
+.role{color:var(--clay);font-size:16px;margin:0 0 12px}
+.pcard p{font-size:17px;margin-bottom:.7em}
+.pcard a,.more a{color:var(--green);font-weight:500;text-underline-offset:3px}
+.talap{display:grid;grid-template-columns:300px 1fr;gap:40px;margin-top:28px;padding:30px;background:#f8f4e9;border-radius:8px;border:1px solid rgba(23,32,28,.14);align-items:start}
+.talap>img{width:100%;aspect-ratio:1/1.05;object-fit:cover;object-position:50% 15%;border-radius:6px}
+.talap h3{font-size:36px;color:var(--green);margin-bottom:6px}
+.talap p{max-width:36em}
+details{margin-top:18px;border-top:1px solid rgba(23,32,28,.22)}
+summary{cursor:pointer;padding:16px 0;font-weight:500;color:var(--green);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--display);font-size:30px;line-height:1}
+details[open] summary::after{content:"–"}
+details .timeline{margin:10px 0 30px}
+details .timeline time{font-size:24px}
+.mini{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:12px;margin:8px 0 6px}
+.mini img{width:100%;height:220px;object-fit:cover;border-radius:6px}
+@media (max-width:900px){
+  .people{grid-template-columns:1fr}
+  .talap{grid-template-columns:1fr;gap:26px;padding:22px}
+  .talap>img{max-width:320px}
+}
+@media (max-width:520px){
+  .pcard{grid-template-columns:1fr;padding:20px}
+  .pcard img{width:140px;height:156px}
+  .mini{grid-template-columns:1fr 1fr}.mini img:first-child{grid-column:1/-1}
+  .clanfacts dd{font-size:24px}
+}
 </style>
 </head>
 <body>
-<a class="skip" href="#maqsat">Мазмұнға өту</a>
+<a class="skip" href="#ru">Мазмұнға өту</a>
 
 <nav class="nav" aria-label="Бөлімдер">
   <div class="wrap">
     <a class="brand" href="#top"><img src="img/logo.png" alt="" width="36" height="36">Сарыбас</a>
     <ul>
+      <li><a href="#ru">Ру туралы</a></li>
       <li><a href="#maqsat">Мақсат</a></li>
       <li><a href="#mura">Мұра</a></li>
-      <li><a href="#tulga">Тұлға</a></li>
-      <li><a href="#shezhire">Шежіре</a></li>
+      <li><a href="#tulga">Тұлғалар</a></li>
       <li><a href="#marapat">Марапаттар</a></li>
-      <li><a href="#suretter">Суреттер</a></li>
       <li><a href="#bailanys">Байланыс</a></li>
     </ul>
   </div>
@@ -229,7 +268,7 @@ blockquote footer{font-family:var(--text);font-size:15px;color:#c5cfc7;margin-to
     <div class="hero-text">
       <div class="crest"><img src="img/logo.png" alt="«Алаша – Сарыбас» логотипі: жасыл дөңгелек ішінде алтын шаңырақ пен ру таңбасы" width="128" height="128"><span>Кіші жүз, Байұлы,<br>Алаша руы</span></div>
       <h1>Сарыбас</h1>
-      <p class="lead">Алаша руының Сарыбас атасынан тараған ұрпақтың шежіресі, тарихи мұрасы мен елге еңбегі сіңген тұлғалары туралы кітапқа қосымша мәлімет.</p>
+      <p class="lead">Алаша руының Сарыбас атасынан тараған әулеттің шежіресі, тарихи мұрасы, тұлғалары және ұрпақ бірлігі туралы.</p>
     </div>
     <figure class="arch">
       <img src="img/stone.jpg" alt="Далада тұрған, бетіне араб қарпімен жазу қашалған көне ұлутас құлпытас">
@@ -238,6 +277,30 @@ blockquote footer{font-family:var(--text);font-size:15px;color:#c5cfc7;margin-to
 </header>
 
 <main>
+
+<section class="sec lineage" id="ru">
+  <div class="wrap">
+    <div>
+      <hr class="rule">
+      <h2>Сарыбас атасы</h2>
+      <p class="intro">Сарыбас – Кіші жүздің Байұлы бірлестігіне кіретін Алаша руының бір атасы. Бұл бет сол атадан тараған ұрпақтың шежіресін, тарихын және бүгінгі тынысын бір жерге жинайды.</p>
+      <dl class="clanfacts">
+        <dt>Жүз</dt><dd>Кіші жүз</dd>
+        <dt>Бірлестік</dt><dd>Байұлы</dd>
+        <dt>Ру</dt><dd>Алаша</dd>
+        <dt>Ұран</dt><dd>Байбарақ</dd>
+      </dl>
+    </div>
+    <div>
+      <ol class="chain" aria-label="Сарыбастан тараған тармақ">
+        <li class="root"><span><small>Алаша руы</small>Сарыбас</span></li>
+        <li>Байтоқа</li>
+        <li>Тұтқыш</li>
+        <li class="open">Өзге тармақтар шежіре жиналған сайын толықтырылады</li>
+      </ol>
+    </div>
+  </div>
+</section>
 
 <section class="sec" id="maqsat">
   <div class="wrap">
@@ -286,73 +349,57 @@ blockquote footer{font-family:var(--text);font-size:15px;color:#c5cfc7;margin-to
 
 <section class="sec" id="tulga">
   <div class="wrap">
-    <div class="person-head">
+    <hr class="rule">
+    <h2>Тұлғалар</h2>
+    <p class="intro">Рудың атын шығарған батыр да, өнер иесі де, ауылына адал қызмет еткен еңбек адамы да осы тізімнен орын алады. Тізім жаңа есімдермен толыға береді.</p>
+
+    <div class="people">
+      <article class="pcard">
+        <img src="img/baibarak-portrait.jpg" alt="Дулыға киген, иығына тері жамылған батырдың салынған бейнесі">
+        <div>
+          <h3>Байбарақ Құдайқұлұлы</h3>
+          <p class="role">Батыр</p>
+          <p>Есімі Алаша руының ұранына айналған батыр. Алаша Сарыбас қоры оның атындағы төс белгіні тағайындаған.</p>
+        </div>
+      </article>
+      <article class="pcard">
+        <img src="img/kali-portrait.jpg" alt="Қара бөрік киген Қали Жантлеуовтің портреті">
+        <div>
+          <h3>Қали Жантлеуов</h3>
+          <p class="role">Күйші</p>
+          <p>Қазақ ССР Халық артисі, Қазақстанның көрнекті күйшісі. Қордың екінші төс белгісі оның есімімен аталады.</p>
+          <p><a href="https://kontidauletova7820-creator.github.io/kuyshi_Kali/">«Күйші Қали» кітабының сайтын ашу</a></p>
+        </div>
+      </article>
+    </div>
+
+    <article class="talap">
+      <img src="img/p1.jpg" alt="Сұр костюм киген, күлімсіреп тұрған ақ шашты ер адамның портреті">
       <div>
-        <hr class="rule">
-        <h2>Батырашов Талап</h2>
-        <p class="sub">Адал еңбегімен ел құрметіне бөленген азамат</p>
-        <dl class="facts">
-          <dt>Туған жылы</dt><dd>1954</dd>
-          <dt>Туған жері</dt><dd>Батыс Қазақстан облысы, Жаңақала ауданы, Көпжасар ауылы</dd>
-          <dt>Тегі</dt><dd>Алаша руы, Сарыбас атасы, Байтоқа ұлы Тұтқыш тармағы</dd>
-          <dt>Жұбайы</dt><dd>Тілекешқызы Гүлайым</dd>
-        </dl>
+        <h3>Батырашов Талап</h3>
+        <p class="role">Еңбек адамы, 1954 жылы Жаңақала ауданының Көпжасар ауылында туған</p>
+        <p>Сарыбастың Байтоқа ұлы Тұтқыш тармағынан тарайды. Тракторшы, жүргізуші, кассир болды, ал 1997 жылдан бері такси жүргізіп, ауылдастарын аудан орталығы мен көрші ауылдарға тасымалдады.</p>
+        <p>Қалтасы жұқа жолаушыны да қабақ шытпай жеткізіп салатын. Ел оны осы жанашырлығы мен адал еңбегі үшін құрметтейді.</p>
+        <details>
+          <summary>Өмір жолы мен отбасы суреттерін көру</summary>
+          <ol class="timeline" aria-label="Өмір жолының кезеңдері">
+            <li><time>1954</time><span>Көпжасар ауылында дүниеге келді.</span></li>
+            <li><time>1962</time><span>Саралжын бастауыш мектебінің табалдырығын аттады.</span></li>
+            <li><time>1969</time><span>А. Нұрпейісов атындағы мектепті бітірді.</span></li>
+            <li><time>1970–1971</time><span>Тракторшы мамандығын меңгеріп, ауыл шаруашылығында еңбек жолын бастады.</span></li>
+            <li><time>1974–1976</time><span>Кеңес Армиясы қатарында борышын өтеді. Оралған соң жүргізуші болып, туған жеріндегі кеңшарда еңбек етті.</span></li>
+            <li><time>1984–1997</time><span>Кассир қызметін атқарды.</span></li>
+            <li><time>1997 жылдан</time><span>Жеке кәсіпкер: ауыл халқына такси қызметін көрсетті.</span></li>
+          </ol>
+          <p>Жұбайы Тілекешқызы Гүлайым екеуі ұл-қыз өсіріп, бүгінде немере-жиендерінің ортасында отыр. Үйдегі шежіре тақтасындағы тізбек: Байтоқа, Тұтқыш, Өткелбек, Баянас, Батыраш, Талап, Тимур.</p>
+          <div class="mini">
+            <img src="img/p2.jpg" alt="Қатар отырған ерлі-зайыптылар, екеуі де күлімсіреп тұр">
+            <img src="img/p3.jpg" alt="Ата мен әже немерелерімен бірге, артында жасыл түсті шежіре тақтасы ілулі">
+            <img src="img/p4.jpg" alt="Жас ерлі-зайыптылардың бірге түскен суреті">
+          </div>
+        </details>
       </div>
-      <figure>
-        <img src="img/p1.jpg" alt="Сұр костюм киген, күлімсіреп тұрған ақ шашты ер адамның портреті">
-      </figure>
-    </div>
-
-    <div class="life">
-      <ol class="timeline" aria-label="Өмір жолының кезеңдері">
-        <li><time>1954</time><span>Көпжасар ауылында дүниеге келді.</span></li>
-        <li><time>1962</time><span>Саралжын бастауыш мектебінің табалдырығын аттады.</span></li>
-        <li><time>1969</time><span>А. Нұрпейісов атындағы мектепті бітірді.</span></li>
-        <li><time>1970–1971</time><span>Тракторшы мамандығын меңгеріп, ауыл шаруашылығында еңбек жолын бастады.</span></li>
-        <li><time>1974–1976</time><span>Кеңес Армиясы қатарында азаматтық борышын өтеді. Оралған соң жүргізуші болып, туған жеріндегі кеңшарда еңбек етті.</span></li>
-        <li><time>1984–1997</time><span>Кассир қызметін атқарды.</span></li>
-        <li><time>1997 жылдан</time><span>Жеке кәсіпкер: ауыл халқына жолаушылар тасымалы, яғни такси қызметін көрсетті.</span></li>
-      </ol>
-
-      <div class="story">
-        <h3>Жол үстіндегі қызмет</h3>
-        <p>Такси Талап үшін табыс көзі ғана емес, ауылдастарына қызмет етудің жолы болды. Көпжасар тұрғындарын аудан орталығына, көрші ауылдарға жеткізді: біреу науқасын дәрігерге апарады, біреу тойға, құдалыққа немесе садақаға асығады.</p>
-        <p>Қыстың боранында да, жаздың аптабында да, күндіз-түні демей жолға шықты. Жолаушыны діттеген жеріне жеткізуді азаматтық міндеті санады.</p>
-
-        <h3>Елге жанашыр</h3>
-        <p>Жолаушыға тек ақша есебімен қараған жоқ. Қалтасы жұқа, жолақысын толық төлей алмайтын адамды да қабақ шытпай, артық сөз айтпай жеткізіп салатын. Ол үшін елдің алғысы материалдық пайдадан жоғары тұрды.</p>
-        <p>Жасаған көмегін жария етпей, қарапайым қалпынан айнымай өмір сүріп келеді.</p>
-
-        <h3>Шаңырақ</h3>
-        <p>Жұбайы Гүлайым екеуі ұл-қыз тәрбиелеп өсірді. Бүгінде немере-жиендерінің ортасында отырған бақытты ата мен әже.</p>
-
-        <blockquote>
-          «Жақсының жақсылығын айт, нұры тасысын»
-          <footer>Халық даналығы</footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec lineage" id="shezhire">
-  <div class="wrap">
-    <div>
-      <hr class="rule">
-      <h2>Шежіре тізбегі</h2>
-      <p class="intro">Сарыбастан Байтоқа, одан Тұтқыш тарайды. Талап осы Тұтқыш тармағының ұрпағы, ал тізбекті бүгінде оның ұлы жалғап отыр.</p>
-      <p class="note">Тізбек отбасылық суретте көрінетін шежіре тақтасындағы жазу бойынша берілді. Аталардың толық тізімі мен жылдары кітапта нақтыланады.</p>
-    </div>
-    <ol class="chain" aria-label="Аталар тізбегі, үлкенінен кішісіне қарай">
-      <li class="root"><span><small>Алаша руы</small>Сарыбас</span></li>
-      <li>Байтоқа</li>
-      <li>Тұтқыш</li>
-      <li>Өткелбек</li>
-      <li>Баянас</li>
-      <li>Батыраш</li>
-      <li class="me">Талап</li>
-      <li>Тимур</li>
-    </ol>
+    </article>
   </div>
 </section>
 
@@ -394,30 +441,17 @@ blockquote footer{font-family:var(--text);font-size:15px;color:#c5cfc7;margin-to
   </div>
 </section>
 
-<section class="sec" id="suretter">
-  <div class="wrap">
-    <hr class="rule">
-    <h2>Отбасы альбомынан</h2>
-    <p class="intro">Адал еңбектің жемісі – тату шаңырақ пен ұрпақ қызығы.</p>
-    <div class="gallery">
-      <figure><img src="img/p2.jpg" alt="Қатар отырған ерлі-зайыптылар, екеуі де күлімсіреп тұр"></figure>
-      <figure><img src="img/p3.jpg" alt="Ата мен әже немерелерімен бірге, артында жасыл түсті шежіре тақтасы ілулі"></figure>
-      <figure><img src="img/p4.jpg" alt="Жас ерлі-зайыптылардың бірге түскен суреті"></figure>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <footer class="contact" id="bailanys">
   <div class="wrap">
     <h2>Байланыс</h2>
-    <p class="intro">Шежіреге қосар дерегіңіз, көне суретіңіз немесе түзетуіңіз болса, Мусин Тлегенге хабарласыңыз.</p>
+    <p class="intro">Өз тармағыңыздың шежіресін, көне суретті немесе түзетуді Мусин Тлегенге жіберіңіз. Әр дерек ортақ шежірені толықтырады.</p>
     <div class="links">
       <a href="tel:+77781290668"><small>Телефон</small><b>+7 778 129 06 68</b></a>
       <a href="mailto:tlegen351@gmail.com"><small>Электрондық пошта</small><b>tlegen351@gmail.com</b></a>
     </div>
-    <p class="fine">«Сарыбас» кітабына қосымша мәлімет беті. Мәтін қысқаша мазмұндама ретінде берілген.</p>
+    <p class="fine">Алаша – Сарыбас ұрпақтарына арналған бет.</p>
   </div>
 </footer>
 </body>
