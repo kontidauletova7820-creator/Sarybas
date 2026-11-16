@@ -292,6 +292,15 @@ details .timeline time{font-size:24px}
 .ziyarat blockquote footer{color:var(--clay)}
 @media (max-width:900px){.balance{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.balance{grid-template-columns:1fr}}
+
+/* Бүгінгі ұрпақ */
+.today .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:center}
+.today figure{margin:0}
+.today img{width:100%;border-radius:6px}
+.today figcaption{margin-top:16px;padding-left:18px;border-left:3px solid var(--gold)}
+.today figcaption b{display:block;font-family:var(--display);font-weight:500;font-size:26px;color:var(--green);line-height:1.2}
+.today figcaption span{display:block;margin-top:4px;font-size:17px}
+@media (max-width:900px){.today .wrap{grid-template-columns:1fr;gap:40px}.today figure{max-width:440px}}
 </style>
 </head>
 <body>
@@ -308,6 +317,7 @@ details .timeline time{font-size:24px}
       <li><a href="#zirat">Зират</a></li>
       <li><a href="#tulga">Тұлғалар</a></li>
       <li><a href="#marapat">Марапаттар</a></li>
+      <li><a href="#urpaq">Ұрпақ</a></li>
       <li><a href="#bailanys">Байланыс</a></li>
     </ul>
   </div>
@@ -589,6 +599,21 @@ details .timeline time{font-size:24px}
         </div>
       </div>
     </article>
+  </div>
+</section>
+
+<section class="sec today" id="urpaq">
+  <div class="wrap">
+    <figure>
+      <img src="img/altyayaq.jpg" alt="Ақ фон алдында үш ер адам: екеуі костюммен орындықта отыр, үшіншісі ақ жейдемен ортада тұр, қолын екеуінің иығына қойған">
+      <figcaption><b>Алтыаяқ тармағы</b><span>Бақтыгереев Ерген, Мусин Тлеген, Бақтыгереев Ерсайын</span></figcaption>
+    </figure>
+    <div>
+      <hr class="rule">
+      <h2>Бүгінгі ұрпақ</h2>
+      <p class="intro">Шежіре өткенмен бітпейді. Сарыбастың әр тармағының ұрпағы бүгін де бас қосып, ата-баба дерегін жинап, бір-бірін тауып жатыр.</p>
+      <p>Бұл бөлімге әр тармақтың суреті қосылып отырады. Өз әулетіңіздің суретін есімдерімен бірге <a href="#bailanys" style="color:var(--green);font-weight:500">байланыс бөліміндегі</a> мекенжайға жіберіңіз.</p>
+    </div>
   </div>
 </section>
 
