@@ -42,7 +42,7 @@ section[id],footer[id]{scroll-margin-top:58px}
 .brand{font-family:var(--display);font-size:22px;color:var(--gold-soft);text-decoration:none;white-space:nowrap}
 .nav ul{list-style:none;display:flex;gap:6px;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
 .nav ul::-webkit-scrollbar{display:none}
-.nav li a{display:block;padding:8px 12px;color:#dfe7e1;text-decoration:none;font-size:15px;white-space:nowrap;border-radius:999px}
+.nav li a{display:block;padding:8px 10px;color:#dfe7e1;text-decoration:none;font-size:15px;white-space:nowrap;border-radius:999px}
 .nav li a:hover{background:rgba(201,164,76,.16);color:#fff}
 
 /* ---------- Басты бет ---------- */
@@ -279,6 +279,19 @@ details .timeline time{font-size:24px}
   .trio>div,.trio>div+div{padding:26px 0 0;border-left:0}
   .trio>div+div{border-top:1px solid rgba(201,164,76,.4);margin-top:26px}
 }
+
+/* Зират әдебі */
+.ziyarat{background:var(--stone-2)}
+.ziyarat .aim h3{font-size:28px}
+.ziyarat .aim p{max-width:28em}
+.ziyarat .aim p+p{margin-top:.7em}
+.balance{margin:56px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:0;list-style:none}
+.balance li{background:var(--green);color:#efe9d8;border-radius:6px;padding:20px 22px;font-size:16px}
+.balance b{display:block;font-family:var(--display);font-weight:500;font-size:26px;color:var(--gold-soft);margin-bottom:2px}
+.ziyarat blockquote{max-width:24em;background:transparent;color:var(--green);padding:0;margin-top:56px;border-left:3px solid var(--gold);padding-left:26px;border-radius:0}
+.ziyarat blockquote footer{color:var(--clay)}
+@media (max-width:900px){.balance{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.balance{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -292,6 +305,7 @@ details .timeline time{font-size:24px}
       <li><a href="#baba">Тарих</a></li>
       <li><a href="#maqsat">Мақсат</a></li>
       <li><a href="#mura">Мұра</a></li>
+      <li><a href="#zirat">Зират</a></li>
       <li><a href="#tulga">Тұлғалар</a></li>
       <li><a href="#marapat">Марапаттар</a></li>
       <li><a href="#bailanys">Байланыс</a></li>
@@ -437,6 +451,49 @@ details .timeline time{font-size:24px}
         <li><b>Сарыбастар қорымы</b>Ата-баба жатқан қорым, ондағы құлпытастар – шежіренің тастағы беттері.</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<section class="sec ziyarat" id="zirat">
+  <div class="wrap">
+    <hr class="rule">
+    <h2>Зират ету және ата-ана аманаты</h2>
+    <p class="intro">Зират – өткен ұрпақтың үнсіз шежіресі. Қабірге бару өліден бірдеңе сұрау емес: ол тірінің жүрегін оятады, өлімді еске салады және марқұмға дұға жасауға себеп болады.</p>
+
+    <div class="aims">
+      <article class="aim">
+        <h3>Зират әдебі</h3>
+        <p>Қабірстанға келген адам әуелі сәлем беріп, марқұмдарға Алладан рақым тілейді. Қабірді баспайды, таптамайды, құлпытасты бүлдірмейді.</p>
+        <p>Марқұмды құрметтеу мен одан жәрдем сұраудың арасы бөлек: тілек тек Аллаға айтылады.</p>
+      </article>
+      <article class="aim">
+        <h3>Құран бағыштау</h3>
+        <p>Құран оқу – ең алдымен оқыған адамның өзіне ғибадат. Ханафи мәзһабының кең тараған түсінігінде оның сауабын марқұмға бағыштауға рұқсат берілген.</p>
+        <p>Қатымнан кейінгі дұға қарапайым әрі ықыласты болғаны жөн: сауапты жеткізуші де, қабыл етуші де Алла.</p>
+      </article>
+      <article class="aim">
+        <h3>Ата-ана аманаты</h3>
+        <p>Хадис бойынша адам өткен соң үш нәрсенің сауабы жалғасады: үзілмейтін садақа, пайдалы білім және артынан дұға ететін салиқалы ұрпақ («Муслим», 1631).</p>
+        <p>Ата-ана өткен соң да перзенттік борыш тоқтамайды: дұға ету, атынан садақа беру, туыстарымен байланысты үзбеу, жақсы атын сақтау.</p>
+      </article>
+      <article class="aim">
+        <h3>Ақтық көмек</h3>
+        <p>Қаралы үйге ағайынның жиналып жәрдемдесуі – ғасырлар бойы қалыптасқан дәстүр. Көмек марқұмға емес, артында қалған отбасына көрсетіледі.</p>
+        <p>Оның мәні сомада емес, ниетте. Шариғатта бекітілген мөлшер жоқ, сондықтан жәрдемді жарысқа не міндетке айналдырмаған жөн.</p>
+      </article>
+    </div>
+
+    <ul class="balance" aria-label="Зират мәдениетінің өзегі">
+      <li><b>Құрмет</b>өткендерге</li>
+      <li><b>Дұға</b>марқұмдарға</li>
+      <li><b>Ғибрат</b>тірілерге</li>
+      <li><b>Тәуекел</b>бір Аллаға</li>
+    </ul>
+
+    <blockquote>
+      «Өлі разы болмай, тірі байымайды»
+      <footer>Халық даналығы. Мағынасы: өткендердің аманатын орындап, атын ұмытпау – тірілердің борышы.</footer>
+    </blockquote>
   </div>
 </section>
 
